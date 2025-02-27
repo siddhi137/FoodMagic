@@ -49,7 +49,7 @@ To get started with this project locally, follow these steps:
 4. Push to the branch (`git push origin feature-name`)
 
 ## Live Website Link
-<a href="https://siddhi137.github.io/FoodMagic/" target="_blank">Live Page</a>
+<a href="[https://siddhi137.github.io/FoodMagic/](https://siddhi137.github.io/FoodMagic/)" target="_blank">Food Magic</a>
 
 ## Contact
 
