@@ -48,6 +48,8 @@ To get started with this project locally, follow these steps:
 3. Commit your changes (`git commit -m 'Add new feature'`)
 4. Push to the branch (`git push origin feature-name`)
 
+## Live Website Link
+<a href="https://siddhi137.github.io/FoodMagic/" target="_blank">Live Page</a>
 
 ## Contact
 
