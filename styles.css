@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0EDE5;
+}
+
+/* styling for header part */
+.header {
+    display: flex;
+    /* border: 2px solid red; */
+    height: 8vh;
+    align-items: center;
+    gap: 650px;
+    background: linear-gradient(to right, #ef32d9, #89fffd);
+}
+
+/* styling for logo */
+#name {
+    margin: 30px;
+    /* border: 1px solid black; */
+    /* background: linear-gradient(to right, rgb(193, 193, 128), rgb(226, 160, 226)); */
+    width: 10vw;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* styling for nav anchor tag */
+a {
+    margin-right: 50px;
+    color: darkblue;
+}
+
+/* styling for navbar option part */
+.navbar>select {
+    background-color: bisque;
+}
+
+/* styling for background image */
+.content {
+    background-image: url(https://i.pinimg.com/736x/0f/64/8a/0f648a264b8179e13a7c6ff540da4e4f.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* Center the image */
+    height: 350px;
+    /* Set a fixed height for the banner */
+    text-align: center;
+    /* Center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for background image content para */
+.content>p {
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+/* styling for whats in your mind card */
+/* this is top section */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* styling for whats in your mind each card */
+.card {
+    /* border: 1px solid black; */
+    justify-items: center;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    background-color: #f0e6d7;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* styling for making card large when cursor goes on card */
+.card:hover {
+    transform: rotate(4deg) scale(1.1);
+}
+
+/* to make other card blur when hover on specific card */
+.cards:hover .card:not(:hover) {
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+/* styling for whats in your mind each card image */
+.card>img {
+    height: 200px;
+    margin: 10px;
+}
+
+/* styling for whats in your mind each card heading */
+.card>h2 {
+    text-align: center;
+}
+
+/* styling for whats in your mind each card para */
+.card>p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* styling for Resturants To Explore which is in h1 */
+h1 {
+    text-align: center;
+    margin: 100px 50px 50px 10px;
+    text-decoration-line: underline;
+}
+
+/* styling for Resturants To Explore card */
+/* this is mid section */
+
+.container>#cards2 {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* styling for Resturants To Explore each card */
+.cardtwo {
+    /* border: 2px solid orangered; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 300px;
+    background-color: #EDF1FF;
+
+}
+
+.cardtwo:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease;
+}
+
+/* styling for Resturants To Explore each card image */
+.cardtwo>img {
+    width: 300px;
+    /* margin: 10px 10px 10px 10px; */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* styling for Resturants To Explore each card ratings*/
+.cardtwo>h2 {
+    margin-left: 10px;
+}
+
+/* styling for Resturants To Explore each card  para*/
+.cardtwo>p {
+    margin-left: 10px;
+    padding: 1px;
+}
+
+
+/* styling for footer part */
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #D2C29D;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/* styling for heading of fotter*/
+div h3 {
+    text-decoration: underline;
+    margin: 0px 0px 10px 0px;
+}
+
+/* styling for footer p*/
+div p {
+    margin: 0px 0px 5px 0px;
+    color: rgb(78, 69, 69);
+    font-weight: bolder;
+}
+
+/* styling for social media link */
+
+div a {
+    margin-top: 5px;
+}
+
+/* styling for social link hover*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* for large screen */
+@media (min-width: 1310px) {}
+
+/* for medium screen */
+@media (min-width: 767px) and (max-width: 1310px) {
+
+    /* for mavbar part */
+    .navbar {
+        display: none;
+    }
+
+    /* for top-section */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* for mid-section */
+    .cardtwo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* for small screen */
+@media (min-width: 320px) and (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+
+    #option {
+        display: block;
+        appearance: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* for top-section */
+    .cards {
+        grid-template-columns: 240px;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* for mid-section */
+    .cardtwo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#option {
+width: 100%;
+background-color: lightcoral;
+color: wheat;
+display: none;
+height: 30px;
+}
