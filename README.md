@@ -50,7 +50,7 @@ To get started with this project locally, follow these steps:
 
 ## Live Website Link
 
-<a href="#" onclick="window.open('https://siddhi137.github.io/FoodMagic/', '_blank'); return false;">Food Magic</a>
+<a href="https://siddhi137.github.io/FoodMagic/" target="_blank">Food Magic</a>
 
 ## Contact
 
